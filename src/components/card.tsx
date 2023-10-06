@@ -4,8 +4,6 @@ import styled from "styled-components";
 
 export const Card = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
 
   background: var(--card-background-color);
@@ -18,16 +16,14 @@ export const Card = styled.div`
   min-width: 250px;
 
   h3 {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 150%;
-    color: var(--text-dark-2);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 200%;
   }
 
   p {
     font-weight: 600;
     font-size: 14px;
     line-height: 150%;
-    color: var(--shapes-dark);
   }
 `;
