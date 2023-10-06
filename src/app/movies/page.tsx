@@ -11,10 +11,14 @@ import { Movie } from "../../types/movie";
 
 export default function Movies() {
   const [year, setYear] = useState("");
-  const [page] = useState(0);
+  const [page, setPage] = useState(0);
   const [isWinner, setIsWinner] = useState(false);
 
-  const { movies } = useMovies({ page, isWinner, year });
+  const { movies, totalPages, currentPage } = useMovies({
+    page,
+    isWinner,
+    year,
+  });
 
   const columns = [
     {
@@ -27,6 +31,8 @@ export default function Movies() {
           <span>Year</span>
           <Input
             type="number"
+            style={{ width: 130 }}
+            placeholder="Search by year"
             defaultValue={year}
             onChange={(e) => setYear(e.target.value)}
           />
@@ -52,7 +58,15 @@ export default function Movies() {
   return (
     <Card>
       <h3>List movies</h3>
-      <CustomTable columns={columns} data={movies}></CustomTable>
+      <CustomTable
+        columns={columns}
+        data={movies}
+        pagination={{
+          totalPages: totalPages,
+          currentPage: currentPage + 1,
+          onPageChange: (page: number) => setPage(page - 1),
+        }}
+      ></CustomTable>
     </Card>
   );
 }

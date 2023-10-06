@@ -10,8 +10,8 @@ interface UseMoviesProps {
   size?: number;
 }
 
-export function useMovies({ page, isWinner, year, size = 20 }: UseMoviesProps) {
-  const { data } = useQuery(["movies", year, isWinner], async () => {
+export function useMovies({ page, isWinner, year, size = 15 }: UseMoviesProps) {
+  const { data } = useQuery(["movies", page, year, isWinner], async () => {
     const response = await api.get<MoviesFetchResponse>(
       `/movies?page=${page}&size=${size}&winner=${isWinner}&year=${year}`
     );
@@ -21,5 +21,7 @@ export function useMovies({ page, isWinner, year, size = 20 }: UseMoviesProps) {
 
   return {
     movies: data?.content ?? [],
+    totalPages: data?.totalPages ?? 0,
+    currentPage: data?.number ?? 0,
   };
 }

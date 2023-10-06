@@ -3,7 +3,7 @@ import { Pagination, Sort } from "./pagination";
 
 export interface MoviesFetchResponse {
   content: Movie[];
-  pageable: Pagination[];
+  pageable: Pagination;
   last: boolean;
   totalPages: number;
   totalElements: number;
