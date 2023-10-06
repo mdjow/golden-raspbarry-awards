@@ -8,5 +8,5 @@ export interface ProjectionsFetchResponse {
   years?: {
     year: number;
     winnerCount: number;
-  };
+  }[];
 }
