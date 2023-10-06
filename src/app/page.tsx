@@ -1,11 +1,11 @@
 "use client";
 
-import { Card } from "../components/card";
+import WinnerMovies from "../components/movies-winners-card";
 
 export default function Dashboard() {
   return (
     <div>
-      <Card></Card>
+      <WinnerMovies />
     </div>
   );
 }

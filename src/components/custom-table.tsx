@@ -34,6 +34,10 @@ const Table = styled.table`
 `;
 
 export function CustomTable<T>({ columns, data }: CustomTableProps<T>) {
+  if (!data.length) {
+    return <center>no results found</center>;
+  }
+
   return (
     <Table>
       <thead>

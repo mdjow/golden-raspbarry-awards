@@ -7,7 +7,7 @@ import { Checkbox } from "../../components/checkbox";
 import { Input } from "../../components/input";
 import { CustomTable } from "../../components/custom-table";
 import { useMovies } from "../../hooks/useMovies";
-import { Movie } from "@/types/movie";
+import { Movie } from "../../types/movie";
 
 export default function Movies() {
   const [year, setYear] = useState("");
@@ -29,7 +29,7 @@ export default function Movies() {
             type="number"
             defaultValue={year}
             onChange={(e) => setYear(e.target.value)}
-          ></Input>
+          />
         </>
       ),
       renderCell: (row: Movie) => <span>{row.year}</span>,
@@ -42,7 +42,7 @@ export default function Movies() {
       renderHeader: () => (
         <>
           <span>Winner</span>
-          <Checkbox onChange={(e) => setIsWinner(e.target.checked)}></Checkbox>
+          <Checkbox onChange={(e) => setIsWinner(e.target.checked)} />
         </>
       ),
       renderCell: (row: Movie) => <span>{row.winner ? "Yes" : "No"}</span>,
