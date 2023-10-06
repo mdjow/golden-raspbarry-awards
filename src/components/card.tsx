@@ -17,13 +17,13 @@ export const Card = styled.div`
 
   h3 {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 200%;
   }
 
   p {
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 18px;
     line-height: 150%;
   }
 `;

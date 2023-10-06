@@ -2,16 +2,16 @@
 
 import { useState } from "react";
 
-import { Card } from "../components/card";
-import { Input } from "../components/input";
-import { CustomTable } from "../components/custom-table";
+import { Card } from "./card";
+import { Input } from "./input";
+import { CustomTable } from "./custom-table";
 import { useMovies } from "../hooks/useMovies";
 import { Movie } from "../types/movie";
 
 export default function WinnerMovies() {
   const [year, setYear] = useState("");
 
-  const { movies } = useMovies({ page: 0, isWinner: true, year });
+  const { movies } = useMovies({ page: 0, isWinner: true, year, size: 6 });
 
   const columns = [
     {
