@@ -8,7 +8,7 @@ interface Column<T> {
 
 interface CustomTableProps<T> {
   columns: Column<T>[];
-  data: T[];
+  data?: T[];
 }
 
 const Table = styled.table`
@@ -34,7 +34,7 @@ const Table = styled.table`
 `;
 
 export function CustomTable<T>({ columns, data }: CustomTableProps<T>) {
-  if (!data.length) {
+  if (!data?.length) {
     return <center>no results found</center>;
   }
 

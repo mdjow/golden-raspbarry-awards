@@ -52,7 +52,7 @@ export default function Movies() {
   return (
     <Card>
       <h3>List movies</h3>
-      <CustomTable columns={columns} data={movies?.content ?? []}></CustomTable>
+      <CustomTable columns={columns} data={movies}></CustomTable>
     </Card>
   );
 }

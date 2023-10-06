@@ -37,7 +37,7 @@ export default function WinnerMovies() {
         defaultValue={year}
         onChange={(e) => setYear(e.target.value)}
       />
-      <CustomTable columns={columns} data={movies?.content ?? []}></CustomTable>
+      <CustomTable columns={columns} data={movies}></CustomTable>
     </Card>
   );
 }

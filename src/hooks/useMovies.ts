@@ -20,6 +20,6 @@ export function useMovies({ page, isWinner, year, size = 20 }: UseMoviesProps) {
   });
 
   return {
-    movies: data,
+    movies: data?.content ?? [],
   };
 }
