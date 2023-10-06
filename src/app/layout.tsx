@@ -5,7 +5,6 @@ import { Inter } from "next/font/google";
 
 import Header from "../components/header";
 import { Menu, MenuLink } from "../components/menu";
-import { Content } from "../components/content";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,13 +25,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <Content>
+        <div className="main-container">
           <Menu>
             <MenuLink href="/">Dashboard</MenuLink>
             <MenuLink href="/list">List</MenuLink>
           </Menu>
-          {children}
-        </Content>
+          <div className="content">{children}</div>
+        </div>
       </body>
     </html>
   );

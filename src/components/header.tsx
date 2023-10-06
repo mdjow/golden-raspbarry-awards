@@ -23,7 +23,7 @@ const HeaderName = styled.a`
   line-height: 150%;
 `;
 
-function Header() {
+const Header: React.FC = () => {
   return (
     <MainHeader>
       <HeaderName className={sairaStencilOne.className}>
@@ -31,6 +31,6 @@ function Header() {
       </HeaderName>
     </MainHeader>
   );
-}
+};
 
 export default Header;
