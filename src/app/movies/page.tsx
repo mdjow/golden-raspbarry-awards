@@ -31,10 +31,13 @@ export default function Movies() {
           <span>Year</span>
           <Input
             type="number"
-            style={{ width: 130 }}
+            style={{ maxWidth: 120 }}
             placeholder="Search by year"
             defaultValue={year}
-            onChange={(e) => setYear(e.target.value)}
+            onChange={(e) => {
+              setPage(0);
+              setYear(e.target.value);
+            }}
           />
         </>
       ),
@@ -48,7 +51,12 @@ export default function Movies() {
       renderHeader: () => (
         <>
           <span>Winner</span>
-          <Checkbox onChange={(e) => setIsWinner(e.target.checked)} />
+          <Checkbox
+            onChange={(e) => {
+              setPage(0);
+              setIsWinner(e.target.checked);
+            }}
+          />
         </>
       ),
       renderCell: (row: Movie) => <span>{row.winner ? "Yes" : "No"}</span>,

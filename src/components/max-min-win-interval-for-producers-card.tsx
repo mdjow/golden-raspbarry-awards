@@ -5,7 +5,7 @@ import { CustomTable } from "./custom-table";
 import { useProjections } from "../hooks/useProjections";
 import { Producer } from "../types/producer";
 
-export default function MaxMinWinIntervalForProducersCard() {
+export function MaxMinWinIntervalForProducersCard() {
   const { max, min } = useProjections({
     projection: "max-min-win-interval-for-producers",
   });

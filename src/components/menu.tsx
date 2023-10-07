@@ -4,10 +4,10 @@ import Link from "next/link";
 import styled from "styled-components";
 
 export const Menu = styled.header`
-  background-color: var(--menu-background-color);
+  background-color: var(--bg-secondary);
   display: flex;
   flex-direction: column;
-  width: 200px;
+  min-width: 160px;
   padding: 8px;
 `;
 

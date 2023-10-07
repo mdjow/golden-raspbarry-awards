@@ -7,7 +7,7 @@ import { CustomTable } from "./custom-table";
 import { Studio } from "../types/studio";
 import { useProjections } from "../hooks/useProjections";
 
-export default function StudiosWinCard() {
+export function StudiosWinCard() {
   const { studios = [] } = useProjections({
     projection: "studios-with-win-count",
   });

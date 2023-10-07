@@ -15,9 +15,9 @@ const PaginationWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f7f7f7;
+  background-color: var(--bg-primary);
   padding: 2px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--shapes);
   border-top: none;
 
   button {
@@ -29,7 +29,7 @@ const PaginationWrapper = styled.div`
     transition: all 0.3s;
 
     &:hover {
-      color: #007bff;
+      color: var(--primary);
     }
 
     &:disabled {
@@ -38,7 +38,7 @@ const PaginationWrapper = styled.div`
     }
 
     &.selected {
-      background-color: #007bff;
+      background-color: var(--primary);
       color: white;
       border-radius: 4px;
     }

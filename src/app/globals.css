@@ -1,15 +1,16 @@
 :root {
   --border-radius: 12px;
-
-  --main-background-color: #FFFFFF;
-
-  --header-name-color: #FFFFFF;
-  --header-background-color: #525659;
-
-  --menu-background-color: #F5F5F5;
-  --menu-item-color: #1750A8;
-
-  --card-background-color: #FFFFFF;
+  --primary: #007bff;
+  --bg-header: #262626;
+  --bg-secondary: #F0F0F5;
+  --bg-primary: #FFFFFF;
+  --text-dark: #737380;
+  --text-light: #FFFFFF;
+  --shapes-dark: #09090A;
+  --text-dark-2: #41414D;
+  --shapes: #DCE2E6;
+  --secondary-text: #617480;
+  --border-color: #A8A8B3;
 }
 
 * {
@@ -20,7 +21,7 @@
 
 html,
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   height: 100vh;
   width: 100vw;
 
@@ -31,7 +32,8 @@ body {
 }
 
 .main-container {
-  background-color: var(--main-background-color);
+  overflow: hidden;
+  background-color: var(--bg-primary);
   display: flex;
   flex: 1;
 }
@@ -43,5 +45,5 @@ body {
   width: 100%;
   min-height: 100vh;
   padding: 20px;
+  overflow: auto;
 }
-

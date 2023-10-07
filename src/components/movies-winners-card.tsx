@@ -8,7 +8,7 @@ import { CustomTable } from "./custom-table";
 import { useMovies } from "../hooks/useMovies";
 import { Movie } from "../types/movie";
 
-export default function WinnerMovies() {
+export function WinnerMovies() {
   const [year, setYear] = useState("");
 
   const { movies } = useMovies({ page: 0, isWinner: true, year, size: 6 });

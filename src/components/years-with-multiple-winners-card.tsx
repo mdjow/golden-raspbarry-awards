@@ -4,7 +4,7 @@ import { Card } from "./card";
 import { CustomTable } from "./custom-table";
 import { useProjections } from "../hooks/useProjections";
 
-export default function YearsWithMultipleWinnersCard() {
+export function YearsWithMultipleWinnersCard() {
   const { years } = useProjections({
     projection: "years-with-multiple-winners",
   });

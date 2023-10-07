@@ -8,8 +8,8 @@ const sairaStencilOne = Saira_Stencil_One({
   subsets: ["latin"],
 });
 
-const MainHeader = styled.header`
-  background-color: var(--header-background-color);
+const HeaderWrapper = styled.header`
+  background-color: var(--bg-header);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,20 +17,18 @@ const MainHeader = styled.header`
 `;
 
 const HeaderName = styled.a`
-  color: var(--header-name-color);
+  color: var(--text-light);
   font-weight: 400;
   font-size: 26px;
   line-height: 150%;
 `;
 
-const Header: React.FC = () => {
+export function Header() {
   return (
-    <MainHeader>
+    <HeaderWrapper>
       <HeaderName className={sairaStencilOne.className}>
         Golden Raspberry Awards
       </HeaderName>
-    </MainHeader>
+    </HeaderWrapper>
   );
-};
-
-export default Header;
+}

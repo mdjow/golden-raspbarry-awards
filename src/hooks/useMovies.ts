@@ -10,7 +10,7 @@ interface UseMoviesProps {
   size?: number;
 }
 
-export function useMovies({ page, isWinner, year, size = 15 }: UseMoviesProps) {
+export function useMovies({ page, isWinner, year, size = 20 }: UseMoviesProps) {
   const { data } = useQuery(["movies", page, year, isWinner], async () => {
     const response = await api.get<MoviesFetchResponse>(
       `/movies?page=${page}&size=${size}&winner=${isWinner}&year=${year}`

@@ -17,25 +17,27 @@ interface CustomTableProps<T> {
   pagination?: PaginationControlsProps;
 }
 
-const Table = styled.table`
+const TableWrapper = styled.table`
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
 
   th,
   td {
-    border: 1px solid #ccc;
-    padding: 10px;
+    border: 1px solid var(--shapes);
+    padding: 5px;
     text-align: left;
+    min-width: 30px;
   }
 
   th {
-    background-color: #f2f2f2;
+    background-color: var(--bg-primary);
     text-align: center;
   }
 
   th * {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
   }
 `;
@@ -47,12 +49,12 @@ export function CustomTable<T>({
 }: CustomTableProps<T>) {
   return (
     <>
-      <Table>
+      <TableWrapper>
         <thead>
           <tr>
             {columns.map((column, index) => (
               <th key={index}>
-                <div>{column.renderHeader()}</div>
+                <span>{column.renderHeader()}</span>
               </th>
             ))}
           </tr>
@@ -73,7 +75,7 @@ export function CustomTable<T>({
             )}
           </tr>
         </tbody>
-      </Table>
+      </TableWrapper>
       {pagination && <PaginationControls {...pagination} />}
     </>
   );
