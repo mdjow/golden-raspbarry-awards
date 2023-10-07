@@ -2,10 +2,10 @@
 
 import styled from "styled-components";
 
-import { MaxMinWinIntervalForProducersCard } from "../components/max-min-win-interval-for-producers-card";
-import { WinnerMovies } from "../components/movies-winners-card";
-import { StudiosWinCard } from "../components/studios-win-card";
-import { YearsWithMultipleWinnersCard } from "../components/years-with-multiple-winners-card";
+import { MaxMinWinIntervalForProducersCard } from "../components/MaxMinWinIntervalForProducersCard";
+import { WinnerMoviesCard } from "../components/MoviesWinnersCard";
+import { YearsWithMultipleWinnersCard } from "../components/YearsWithMultipleWinnersCard";
+import { StudiosWinCard } from "../components/StudiosWinCard";
 
 export const GridContainer = styled.div`
   display: grid;
@@ -24,7 +24,7 @@ export default function Dashboard() {
       <YearsWithMultipleWinnersCard />
       <StudiosWinCard />
       <MaxMinWinIntervalForProducersCard />
-      <WinnerMovies />
+      <WinnerMoviesCard />
     </GridContainer>
   );
 }

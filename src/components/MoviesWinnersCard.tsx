@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 
-import { Card } from "./card";
-import { Input } from "./input";
-import { CustomTable } from "./custom-table";
+import { Card } from "./Card";
+import { Input } from "./Input";
+import { Table } from "./Table";
 import { useMovies } from "../hooks/useMovies";
-import { Movie } from "../types/movie";
+import { Movie } from "../types/Movie";
 
-export function WinnerMovies() {
+export function WinnerMoviesCard() {
   const [year, setYear] = useState("");
 
   const { movies } = useMovies({ page: 0, isWinner: true, year, size: 6 });
@@ -37,7 +37,7 @@ export function WinnerMovies() {
         defaultValue={year}
         onChange={(e) => setYear(e.target.value)}
       />
-      <CustomTable columns={columns} data={movies}></CustomTable>
+      <Table columns={columns} data={movies}></Table>
     </Card>
   );
 }

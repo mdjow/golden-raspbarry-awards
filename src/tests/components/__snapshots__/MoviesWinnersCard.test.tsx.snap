@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WinnerMoviesCard component matches snapshot 1`] = `
+<div
+  className="sc-beyTiQ gWjloO"
+>
+  <h3>
+    List movies winners by year
+  </h3>
+  <input
+    className="sc-guDMob cWLpcD"
+    defaultValue=""
+    onChange={[Function]}
+    placeholder="Search by year"
+    type="number"
+  />
+  <table
+    className="sc-hLQTFJ iYFgiW"
+  >
+    <thead>
+      <tr>
+        <th>
+          <span>
+            <span>
+              ID
+            </span>
+          </span>
+        </th>
+        <th>
+          <span>
+            <span>
+              Year
+            </span>
+          </span>
+        </th>
+        <th>
+          <span>
+            <span>
+              Title
+            </span>
+          </span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <span>
+            1
+          </span>
+        </td>
+        <td>
+          <span>
+            2020
+          </span>
+        </td>
+        <td>
+          <span>
+            Movie A
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span>
+            2
+          </span>
+        </td>
+        <td>
+          <span>
+            2021
+          </span>
+        </td>
+        <td>
+          <span>
+            Movie B
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span>
+            3
+          </span>
+        </td>
+        <td>
+          <span>
+            2022
+          </span>
+        </td>
+        <td>
+          <span>
+            Movie C
+          </span>
+        </td>
+      </tr>
+      <tr />
+    </tbody>
+  </table>
+</div>
+`;

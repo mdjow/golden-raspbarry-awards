@@ -4,14 +4,14 @@ import styled from "styled-components";
 import {
   PaginationControls,
   PaginationControlsProps,
-} from "./table-pagination-controls";
+} from "./TablePaginationControls";
 
 interface Column<T> {
   renderHeader: () => React.ReactNode;
   renderCell: (row: T) => React.ReactNode;
 }
 
-interface CustomTableProps<T> {
+interface TableProps<T> {
   columns: Column<T>[];
   data?: T[];
   pagination?: PaginationControlsProps;
@@ -42,11 +42,7 @@ const TableWrapper = styled.table`
   }
 `;
 
-export function CustomTable<T>({
-  columns,
-  data = [],
-  pagination,
-}: CustomTableProps<T>) {
+export function Table<T>({ columns, data = [], pagination }: TableProps<T>) {
   return (
     <>
       <TableWrapper>

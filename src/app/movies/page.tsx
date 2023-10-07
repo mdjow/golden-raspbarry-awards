@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 
-import { Card } from "../../components/card";
-import { Checkbox } from "../../components/checkbox";
-import { Input } from "../../components/input";
-import { CustomTable } from "../../components/custom-table";
+import { Card } from "../../components/Card";
+import { Checkbox } from "../../components/Checkbox";
+import { Input } from "../../components/Input";
+import { Table } from "../../components/Table";
 import { useMovies } from "../../hooks/useMovies";
-import { Movie } from "../../types/movie";
+import { Movie } from "../../types/Movie";
 
 export default function Movies() {
   const [year, setYear] = useState("");
@@ -66,7 +66,7 @@ export default function Movies() {
   return (
     <Card>
       <h3>List movies</h3>
-      <CustomTable
+      <Table
         columns={columns}
         data={movies}
         pagination={{
@@ -74,7 +74,7 @@ export default function Movies() {
           currentPage: currentPage + 1,
           onPageChange: (page: number) => setPage(page - 1),
         }}
-      ></CustomTable>
+      ></Table>
     </Card>
   );
 }

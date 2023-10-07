@@ -1,6 +1,6 @@
 import { useQuery } from "react-query";
 
-import { MoviesFetchResponse } from "../types/movie-response";
+import { MoviesFetchResponse } from "../types/MovieResponse";
 import api from "../services/api";
 
 interface UseMoviesProps {

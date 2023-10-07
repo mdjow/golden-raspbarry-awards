@@ -2,9 +2,9 @@
 
 import { useMemo } from "react";
 
-import { Card } from "./card";
-import { CustomTable } from "./custom-table";
-import { Studio } from "../types/studio";
+import { Card } from "./Card";
+import { Table } from "./Table";
+import { Studio } from "../types/Studio";
 import { useProjections } from "../hooks/useProjections";
 
 export function StudiosWinCard() {
@@ -28,7 +28,7 @@ export function StudiosWinCard() {
   return (
     <Card>
       <h3>Top 3 studios with winners</h3>
-      <CustomTable columns={columns} data={slicedStudios}></CustomTable>
+      <Table columns={columns} data={slicedStudios}></Table>
     </Card>
   );
 }

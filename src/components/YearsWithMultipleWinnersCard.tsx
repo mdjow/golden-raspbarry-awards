@@ -1,7 +1,7 @@
 "use client";
 
-import { Card } from "./card";
-import { CustomTable } from "./custom-table";
+import { Card } from "./Card";
+import { Table } from "./Table";
 import { useProjections } from "../hooks/useProjections";
 
 export function YearsWithMultipleWinnersCard() {
@@ -27,7 +27,7 @@ export function YearsWithMultipleWinnersCard() {
   return (
     <Card>
       <h3>List years with multiple winners</h3>
-      <CustomTable columns={columns} data={years}></CustomTable>
+      <Table columns={columns} data={years}></Table>
     </Card>
   );
 }

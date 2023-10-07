@@ -1,9 +1,9 @@
 "use client";
 
-import { Card } from "./card";
-import { CustomTable } from "./custom-table";
+import { Card } from "./Card";
+import { Table } from "./Table";
 import { useProjections } from "../hooks/useProjections";
-import { Producer } from "../types/producer";
+import { Producer } from "../types/Producer";
 
 export function MaxMinWinIntervalForProducersCard() {
   const { max, min } = useProjections({
@@ -33,9 +33,9 @@ export function MaxMinWinIntervalForProducersCard() {
     <Card>
       <h3>Producers with longest and shortest interval between wins </h3>
       <p>Maximum </p>
-      <CustomTable columns={columns} data={max}></CustomTable>
+      <Table columns={columns} data={max}></Table>
       <p>Minimum </p>
-      <CustomTable columns={columns} data={min}></CustomTable>
+      <Table columns={columns} data={min}></Table>
     </Card>
   );
 }

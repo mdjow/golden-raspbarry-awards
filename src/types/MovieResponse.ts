@@ -1,5 +1,5 @@
-import { Movie } from "./movie";
-import { Pagination, Sort } from "./pagination";
+import { Movie } from "./Movie";
+import { Pagination, Sort } from "./Pagination";
 
 export interface MoviesFetchResponse {
   content: Movie[];

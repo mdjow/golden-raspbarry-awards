@@ -3,9 +3,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-import { Header } from "../components/header";
-import { Menu, MenuLink } from "../components/menu";
-import { DefaultProviders } from "../components/default-providers";
+import { Header } from "../components/Header";
+import { Menu } from "../components/Menu";
+import { DefaultProviders } from "../components/DefaultProviders";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,10 +28,12 @@ export default function RootLayout({
         <DefaultProviders>
           <Header />
           <div className="main-container">
-            <Menu>
-              <MenuLink href="/">Dashboard</MenuLink>
-              <MenuLink href="/movies">List</MenuLink>
-            </Menu>
+            <Menu
+              items={[
+                { href: "/", label: "Dashboard" },
+                { href: "/movies", label: "List" },
+              ]}
+            />
             <div className="content">{children}</div>
           </div>
         </DefaultProviders>

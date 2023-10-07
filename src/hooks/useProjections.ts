@@ -1,7 +1,7 @@
 import { useQuery } from "react-query";
 
 import api from "../services/api";
-import { ProjectionsFetchResponse } from "../types/projections-response";
+import { ProjectionsFetchResponse } from "../types/ProjectionsResponse";
 
 interface UseProjectionsProps {
   projection: string;

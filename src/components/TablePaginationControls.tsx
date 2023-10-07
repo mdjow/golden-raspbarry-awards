@@ -55,12 +55,17 @@ export const PaginationControls: React.FC<PaginationControlsProps> = ({
   return (
     <PaginationWrapper>
       <button
+        data-testid="pagination-previous-btn"
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
       >
         <KeyboardArrowLeftIcon />
       </button>
-      <button onClick={() => onPageChange(1)} disabled={currentPage === 1}>
+      <button
+        data-testid="pagination-first-page"
+        onClick={() => onPageChange(1)}
+        disabled={currentPage === 1}
+      >
         <FirstPageIcon />
       </button>
       {pages.map((page) => (
@@ -74,12 +79,14 @@ export const PaginationControls: React.FC<PaginationControlsProps> = ({
         </button>
       ))}
       <button
+        data-testid="pagination-next-btn"
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
       >
         <KeyboardArrowRightIcon />
       </button>
       <button
+        data-testid="pagination-last-page"
         onClick={() => onPageChange(totalPages)}
         disabled={currentPage === totalPages}
       >

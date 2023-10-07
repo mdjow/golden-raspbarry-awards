@@ -1,5 +1,5 @@
-import { Producer } from "./producer";
-import { Studio } from "./studio";
+import { Producer } from "./Producer";
+import { Studio } from "./Studio";
 
 export interface ProjectionsFetchResponse {
   studios?: Studio[];

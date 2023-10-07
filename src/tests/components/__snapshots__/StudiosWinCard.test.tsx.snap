@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StudiosWinCard component matches snapshot 1`] = `
+<div
+  className="sc-beyTiQ gWjloO"
+>
+  <h3>
+    Top 3 studios with winners
+  </h3>
+  <table
+    className="sc-dmyDmy fSPGcv"
+  >
+    <thead>
+      <tr>
+        <th>
+          <span>
+            <span>
+              Name
+            </span>
+          </span>
+        </th>
+        <th>
+          <span>
+            <span>
+              Win Count
+            </span>
+          </span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          colSpan={4}
+          style={
+            {
+              "textAlign": "center",
+            }
+          }
+        >
+          no results found
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

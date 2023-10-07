@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders PaginationControls component with correct buttons and functionality 1`] = `
+<div
+  className="sc-beyTiQ dLHumj"
+>
+  <button
+    data-testid="pagination-previous-btn"
+    disabled={true}
+    onClick={[Function]}
+  >
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+      data-testid="KeyboardArrowLeftIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+      />
+    </svg>
+  </button>
+  <button
+    data-testid="pagination-first-page"
+    disabled={true}
+    onClick={[Function]}
+  >
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+      data-testid="FirstPageIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M18.41 16.59 13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"
+      />
+    </svg>
+  </button>
+  <button
+    className="selected"
+    disabled={true}
+    onClick={[Function]}
+  >
+    1
+  </button>
+  <button
+    className=""
+    disabled={false}
+    onClick={[Function]}
+  >
+    2
+  </button>
+  <button
+    className=""
+    disabled={false}
+    onClick={[Function]}
+  >
+    3
+  </button>
+  <button
+    className=""
+    disabled={false}
+    onClick={[Function]}
+  >
+    4
+  </button>
+  <button
+    className=""
+    disabled={false}
+    onClick={[Function]}
+  >
+    5
+  </button>
+  <button
+    data-testid="pagination-next-btn"
+    disabled={false}
+    onClick={[Function]}
+  >
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+      data-testid="KeyboardArrowRightIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+      />
+    </svg>
+  </button>
+  <button
+    data-testid="pagination-last-page"
+    disabled={false}
+    onClick={[Function]}
+  >
+    <svg
+      aria-hidden={true}
+      className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+      data-testid="LastPageIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M5.59 7.41 10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"
+      />
+    </svg>
+  </button>
+</div>
+`;
