@@ -2,7 +2,7 @@
 
 exports[`WinnerMoviesCard component matches snapshot 1`] = `
 <div
-  className="sc-beyTiQ gWjloO"
+  className="sc-beyTiQ nILcX"
 >
   <h3>
     List movies winners by year

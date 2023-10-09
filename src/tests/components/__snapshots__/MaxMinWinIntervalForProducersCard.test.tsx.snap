@@ -2,7 +2,7 @@
 
 exports[`MaxMinWinIntervalForProducersCard component matches snapshot 1`] = `
 <div
-  className="sc-beyTiQ gWjloO"
+  className="sc-beyTiQ nILcX"
 >
   <h3>
     Producers with longest and shortest interval between wins 
