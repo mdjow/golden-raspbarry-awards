@@ -11,7 +11,12 @@ import { Movie } from "../types/Movie";
 export function WinnerMoviesCard() {
   const [year, setYear] = useState("");
 
-  const { movies } = useMovies({ page: 0, isWinner: true, year, size: 6 });
+  const { movies } = useMovies({
+    page: 0,
+    isWinner: true,
+    year,
+    size: 6,
+  });
 
   const columns = [
     {

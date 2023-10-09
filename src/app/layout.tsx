@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import { Header } from "../components/Header";
 import { Menu } from "../components/Menu";
 import { DefaultProviders } from "../components/DefaultProviders";
+import { StyledComponentsRegistry } from "../lib/StyledComponentsRegistry";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,18 +26,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <DefaultProviders>
-          <Header />
-          <div className="main-container">
-            <Menu
-              items={[
-                { href: "/", label: "Dashboard" },
-                { href: "/movies", label: "List" },
-              ]}
-            />
-            <div className="content">{children}</div>
-          </div>
-        </DefaultProviders>
+        <StyledComponentsRegistry>
+          <DefaultProviders>
+            <Header />
+            <div className="main-container">
+              <Menu
+                items={[
+                  { href: "/", label: "Dashboard" },
+                  { href: "/movies", label: "List" },
+                ]}
+              />
+              <div className="content">{children}</div>
+            </div>
+          </DefaultProviders>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
